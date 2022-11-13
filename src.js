@@ -9,7 +9,7 @@ const movieImg = document.getElementById('movie-img')
 const movieInfo = document.getElementById('movie-info')
 
 async function getMovies (movie) {//pribavljanje podataka
-    const url = `http://www.omdbapi.com/?s=${movie}&page=1&apikey=${key}`
+    const url = `https://www.omdbapi.com/?s=${movie}&page=1&apikey=${key}`
     const results = await fetch (url)
     const data = await results.json()
     console.log(data.Search)
